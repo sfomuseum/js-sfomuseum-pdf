@@ -14,7 +14,8 @@
 }
 
 .pdf-controls {
-    display:inline-block;
+	display:inline-block;
+	font-size:1.25rem;
 }
 
 .pdf-controls-count {
@@ -40,23 +41,38 @@
     padding: .75rem;
     text-align:center;
     color: #fff;
-    min-height: 60px;
+    min-height: 40px;
+}
+
+.pdf-controls button {
+	border: none;
+	color: #fff;
 }
 
 .pdf-pagination button {
     background-color: transparent !important;
-    font-size:2rem;
-    margin-left:1rem;
+    font-size:1.5rem;
+   
+}
+
+.pdf-pagination-prev svg {
+    height: 30px !important;
+    width: 30px !important;
+}
+
+.pdf-pagination-next svg {
+    height: 30px !important;
+    width: 30px !important;
 }
 
 .pdf-pagination-zoom-in svg {
-    height: 24px !important;
-    width: 24px !important;
+    height: 28px !important;
+    width: 28px !important;
 }
 
 .pdf-pagination-zoom-out svg {
-    height: 24px !important;
-    width: 24px !important;
+    height: 28px !important;
+    width: 28px !important;
 }
 
 .pdf-preview {

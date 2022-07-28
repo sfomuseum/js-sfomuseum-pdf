@@ -57,11 +57,7 @@ sfomuseum.pdf = (function() {
 		
 		pdfDoc.getPage(num).then(function(page) {
 
-		    console.log("VIEWPORT WITH SCALE", scale);
-
 		    var viewport = page.getViewport({scale: scale});
-
-		    console.log("VIEWPORT", viewport);
 
 		    canvas.height = viewport.height;
 		    canvas.width = viewport.width;
@@ -133,13 +129,10 @@ sfomuseum.pdf = (function() {
 	    
 	    function onZoomIn(){
 		scale = scale + 0.25;
-		console.log("IN", scale);
 		renderPage(pageNum);
 	    };
 
 	    function onZoomOut(){
-
-		console.log("OUT", scale);
 
 		if (scale <= 0.25){
 		    return;
@@ -199,8 +192,6 @@ sfomuseum.pdf = (function() {
 
 		var pagecount_els = document.getElementsByClassName(_pdf_page_count);
 		var pagecount_count = pagecount_els.length;
-
-		console.log("WHAT", pdfDoc.numPages);
 
 		for (var i=0; i < pagecount_count; i++){
 		    pagecount_els[i].textContent = pdfDoc.numPages;
