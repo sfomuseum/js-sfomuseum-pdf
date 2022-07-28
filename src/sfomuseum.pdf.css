@@ -1,0 +1,155 @@
+.pdf-container {
+    border:solid thin;
+    max-width: 1024px !important;    
+    margin:0 auto;
+}
+
+.pdf-document {
+    max-width: 1024px !important;    
+    overflow: scroll;
+}
+
+.pdf-wrapper {
+
+}
+
+.pdf-controls {
+    display:inline-block;
+}
+
+.pdf-controls-count {
+    float:left;
+    padding-top:.4rem;
+    padding-left: 1rem;
+}
+
+.pdf-controls-pagination {
+    float:right;
+}
+
+.pdf-cover {
+    width:480px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.pdf-pagination {
+    max-width: 1024px !important;    
+    margin:0 auto;
+    background-color: #a0915e;
+    padding: .75rem;
+    text-align:center;
+    color: #fff;
+    min-height: 60px;
+}
+
+.pdf-pagination button {
+    background-color: transparent !important;
+    font-size:2rem;
+    margin-left:1rem;
+}
+
+.pdf-pagination-zoom-in svg {
+    height: 24px !important;
+    width: 24px !important;
+}
+
+.pdf-pagination-zoom-out svg {
+    height: 24px !important;
+    width: 24px !important;
+}
+
+.pdf-preview {
+    max-height: 480px;
+    max-width: 480px;
+}
+
+@media (max-width: 1200px) {
+
+    .pdf-document, .pdf-container {
+	max-width: 900px !important;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .pdf-document, .pdf-container {
+	max-width: 800px !important;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .pdf-document, .pdf-container {
+	max-width: 700px !important;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .pdf-document, .pdf-container {
+	max-width: 480px !important;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .pdf-cover {
+	width:320px !important;
+    }
+
+    .pdf-document, .pdf-container {
+	max-width: 320px !important;
+    }
+
+    .pdf-preview {
+	max-width: 320px !important;
+    }
+
+    .pdf-pagination button {
+	margin-left: 1rem !important;
+    }
+
+    .pdf-pagination-count {
+	font-size: 1rem !important;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .pdf-cover {
+	width:270px !important;
+    }
+
+    .pdf-document, .pdf-container {
+	max-width: 270px !important;
+    }
+
+    .pdf-preview {
+	max-width: 250px !important;
+    }
+
+    .pdf-controls-zoom {
+	float:left !important;
+    }
+
+    .pdf-controls-count {
+	display:none !important;
+    }
+
+    .pdf-pagination-zoom-in svg {
+	height: 18px !important;
+	width: 18px !important;
+    }
+
+    .pdf-pagination-zoom-out svg {
+	height: 18px !important;
+	width: 18px !important;
+    }
+
+}
