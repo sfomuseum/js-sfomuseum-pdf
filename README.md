@@ -1,6 +1,6 @@
 # js-sfomuseum-pdf
 
-SFO Museum's Javascript and CSS wrapper around pdf.js
+SFO Museum's Javascript and CSS wrapper around mozilla/pdf.js
 
 ## Documentation
 
